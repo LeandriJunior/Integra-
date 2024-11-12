@@ -1,0 +1,57 @@
+{
+  "produto": {
+        "import": "BO.trier.produto",
+        "classe": "Produto",
+        "tabela": "stage.tmp_produto",
+        "nm_pk": "codigo",
+        "salvar_data": true,
+        "path_todos": "/rest/integracao/produto/obter-todos-v1?primeiroRegistro={}&quantidadeRegistros={}",
+        "path_data": "/rest/integracao/produto/obter-alterados-v1?primeiroRegistro={}&quantidadeRegistros={}&dataInicial={}&dataFinal={}",
+        "is_todos": true,
+        "is_first": true
+      },
+  "estoque": {
+        "import": "BO.trier.estoque",
+        "classe": "Estoque",
+        "tabela": "stage.tmp_estoque",
+        "nm_pk": "codigoProduto",
+        "salvar_data": true,
+        "path_todos": "/rest/integracao/estoque/obter-todos-v1?primeiroRegistro={}&quantidadeRegistros={}",
+        "path_data": "/rest/integracao/estoque/obter-alterados-v1?primeiroRegistro={}&quantidadeRegistros={}&dataInicial={}&dataFinal={}",
+        "is_todos": true,
+        "is_first": false
+      },
+  "grupo": {
+        "import": "BO.trier.grupo",
+        "classe": "Grupo",
+        "tabela": "stage.tmp_grupo",
+        "nm_pk": "codigo",
+        "salvar_data": true,
+        "path_todos": "/rest/integracao/produto/grupo/obter-todos-v1?primeiroRegistro={}&quantidadeRegistros={}",
+        "path_data": "/rest/integracao/produto/grupo/obter-alterados-v1?primeiroRegistro={}&quantidadeRegistros={}&dataInicial={}&dataFinal={}",
+        "is_todos": true,
+        "is_first": true
+      },
+  "categoria": {
+        "import": "BO.trier.categoria",
+        "classe": "Categoria",
+        "tabela": "stage.tmp_categoria",
+        "nm_pk": "codigo",
+        "salvar_data": true,
+        "path_todos": "/rest/integracao/categoria/obter-todos-v1?primeiroRegistro={}&quantidadeRegistros={}",
+        "path_data": "/rest/integracao/categoria/obter-alterados-v1?primeiroRegistro={}&quantidadeRegistros={}&dataInicial={}&dataFinal={}",
+        "is_todos": true,
+        "is_first": true
+      },
+  "laboratorio": {
+        "import": "BO.trier.laboratorio",
+        "classe": "Laboratorio",
+        "tabela": "stage.tmp_laboratorio",
+        "nm_pk": "codigo",
+        "salvar_data": true,
+        "path_todos": "/rest/integracao/laboratorio/obter-todos-v1?primeiroRegistro={}&quantidadeRegistros={}",
+        "path_data": "/rest/integracao/laboratorio/obter-alterados-v1?primeiroRegistro={}&quantidadeRegistros={}&dataInicial={}&dataFinal={}",
+        "is_todos": true,
+        "is_first": true
+      }
+}
